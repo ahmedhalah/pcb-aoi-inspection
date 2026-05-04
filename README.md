@@ -55,5 +55,18 @@ python train/train.py
 - **Dataset**: PCB-AoI (SPI/AOI thermal imaging)
 - **Defects**: Bad_podu آ· Bad_qiaojiao
 
+
+## Download Models
+
+Models are hosted on Google Drive (too large for GitHub):
+
+| File | Size | Link |
+|------|------|------|
+| pcb_defect.onnx | 42 MB | [Download](https://drive.google.com/file/d/1Cb8w8IR7dQu7U9F3rQ19XSr61TG9ArJ_/view?usp=drivesdk) |
+
+| pcb_defect.pt   | 22 MB | [Download](https://drive.google.com/file/d/1Cc2CDgqP-IQQHdFJnC1bCjStQlgE1iQn/view?usp=drivesdk) |
+
+> ONNX model runs without PyTorch — deploy anywhere.
+
 ## License
 MIT
