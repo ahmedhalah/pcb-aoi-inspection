@@ -4,6 +4,7 @@ Real-time PCB solder defect detection using YOLOv8 + ONNX.
 Trained on the [PCB-AoI industrial dataset](https://www.kaggle.com/datasets/kubeedgeianvs/pcb-aoi) â€” real SPI/AOI thermal imagery.
 
 ![Demo Results](assets/demo_results.png)
+![Grafana Dashboard](assets/grafana_dashboard.png)
 
 ## Results
 
