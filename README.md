@@ -35,6 +35,32 @@ python inference/inference_onnx.py \
     --source path/to/pcb_image.jpg
 ```
 
+## 🐳 Docker Deployment (Full Stack)
+
+Run the complete pipeline with one command:
+
+```bash
+cd docker
+docker-compose up
+```
+
+This starts:
+| Service | URL | Credentials |
+|---------|-----|-------------|
+| InfluxDB | http://localhost:8086 | admin / admin123456 |
+| Grafana Dashboard | http://localhost:3001 | admin / admin |
+| Inspector | — | auto-starts |
+
+Then run the publisher in a separate terminal:
+```bash
+python mqtt/mqtt_publisher_real.py
+```
+
+### Docker Stack
+```
+YOLOv8s ONNX → MQTT → Inspector Container → InfluxDB → Grafana
+```
+
 ## Dataset
 
 Download from Kaggle and convert:
